@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+  @font-face {
+    font-family:"Sofia Bold";
+    src: url("../src/assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf") format("opentype");
+  }
+  @font-face {
+    font-family:"Sofia Regular";
+    src: url("../src/assets/fonts/Sofia\ Pro\ Regular\ Az.otf") format("opentype");
+  }
+  @font-face {
+    font-family:"Sofia Medium";
+    src: url("../src/assets/fonts/Sofia\ Pro\ Medium\ Az.otf") format("opentype");
+  }
+}
+@font-face {
+  font-family:"Sofia Bold";
+  src: url("../src/assets/fonts/Sofia\ Pro\ Semi\ Bold\ Az.otf") format("opentype");
+}
+@font-face {
+  font-family:"Sofia Regular";
+  src: url("../src/assets/fonts/Sofia\ Pro\ Regular\ Az.otf") format("opentype");
+}
+@font-face {
+  font-family:"Sofia Medium";
+  src: url("../src/assets/fonts/Sofia\ Pro\ Medium\ Az.otf") format("opentype");
+}
+.Sofia-Bold{
+  font-family: "Sofia Bold";
+}
+.Sofia-Regular{
+  font-family: "Sofia Regular";
+}
+.Sofia-Medium{
+  font-family: "Sofia Medium";
+}
+.background{
+  background-image: url('../src//assets//images/Food.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@layer utilities {
+  .scrollbar::-webkit-scrollbar{
+    width: 20px;
+    height: 5px;
+  }
+  .scrollbar::-webkit-scrollbar-track{
+    border-radius: 100vh;
+    height: 20px;
+  }
+  .scrollbar::-webkit-scrollbar-thumb{
+    background: #4D8194;
+    border-radius: 100vh;
+    border: 3px solid  #F1F5F5;
+  }
+  .scrollbar::-webkit-scrollbar-thumb:hover{
+    background: #3DA0A7;
+  }
+}
+.CardShadow{
+  box-shadow: 0px 2px 16px 0px #0633361A;
+}
+.navbar::before{
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 50px;
+  background-color: white;
+  bottom:68%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  box-shadow:0 10px 10px rgba(0, 0, 0, 0.5);
+}
+.dev-border{
+  border-width: 0px, 0px, 0px, 0px;
+
+border-style: solid;
+
+border-color: #88C3C6;
+
+
+}
